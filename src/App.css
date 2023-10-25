@@ -7,10 +7,13 @@
   pointer-events: none;
 }
 .App .container{
+  margin-left: 300px !important;
+  margin-top: 100px;
   width: 200px;
   height: 140px;
+  background-color: #61dafb;
   border: black;
-  
+  text-decoration: solid;
 }
 
 @media (prefers-reduced-motion: no-preference) {
