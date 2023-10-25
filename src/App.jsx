@@ -1,13 +1,18 @@
 
 import './App.css';
-import React from 'react';
-import { Counter } from './Components/Counter';
+import React, {useState, useEffect} from 'react';
+//mport { Interval } from './Components/Interval';
+//import { Counter } from './Components/Counter';
 
 function App() {
+  const [UIcolor, setUIcolor] = useState(null);
   
   return (
     <div className="App">
-      <Counter/>
+      <div className='container' style={{background: `${UIcolor}`}}>
+
+      </div>
+
     </div>
   );
 }
