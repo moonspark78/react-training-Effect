@@ -6,16 +6,17 @@ import { Callback } from './Components/Callback';
 //import { Counter } from './Components/Counter';
 
 function App() {
-  const [UIcolor, setUIcolor] = useState(null);
+  const [borderColor, setBorderColor] = useState(' ');
+  const [fillColor, setFillColor] = useState('');
 
-  const getColor = (color) => {
-    setUIcolor(color);
-  }
-  
+  const handleColorChange = (color) => {
+    setFillColor(color);
+  };
+
   return (
     <div className="App">
-      <div className='container' style={{background: `${UIcolor}`}}></div>
-      {/* <Callback getColor={getColor}/> */}
+      <div className='container' style={{background: `${borderColor}`, backgroundColor: fillColor,}}></div>
+      <Callback onColorChange={handleColorChange} /> 
     </div>
   );
 }
