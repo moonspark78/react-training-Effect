@@ -6,7 +6,7 @@ import { Callback } from './Components/Callback';
 //import { Counter } from './Components/Counter';
 
 function App() {
-  const [borderColor, setBorderColor] = useState(' ');
+  const [borderColor, setBorderColor] = useState('');
   const [fillColor, setFillColor] = useState('');
 
   const handleColorChange = (color) => {
